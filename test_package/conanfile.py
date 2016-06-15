@@ -22,7 +22,7 @@ class sqlpp11TestConan(ConanFile):
 
     def test(self):
         os.chdir("bin")
-        self.run(".%ssqlpp11_examples.exe insert" % os.sep)
-        self.run(".%ssqlpp11_examples.exe update" % os.sep)
-        self.run(".%ssqlpp11_examples.exe select" % os.sep)
-        self.run(".%ssqlpp11_examples.exe remove" % os.sep)
+        self.run(".%ssqlpp11_examples insert" % os.sep)
+        self.run(".%ssqlpp11_examples update" % os.sep)
+        self.run(".%ssqlpp11_examples select" % os.sep)
+        self.run(".%ssqlpp11_examples remove" % os.sep)
